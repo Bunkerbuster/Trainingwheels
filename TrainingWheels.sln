@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp_InterfacesLibrary", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp_InterfacesUI", "CSharp_InterfacesUI\CSharp_InterfacesUI.csproj", "{D66F247F-6768-41CA-8A39-9C611FE0C674}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_3_DependencyInversionPrincipleLibrary", "DesignPatterns_DependencyInversionPrincipleLibrary\DesignPatterns_3_DependencyInversionPrincipleLibrary.csproj", "{BF3B1109-C101-4887-AAC8-8211AA225F62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_5_DependencyInversionPrincipleLibrary", "DesignPatterns_DependencyInversionPrincipleLibrary\DesignPatterns_5_DependencyInversionPrincipleLibrary.csproj", "{BF3B1109-C101-4887-AAC8-8211AA225F62}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_3_DependencyInversionPrincipleUI", "DesignPatterns_DependencyInversionPrincipleUI\DesignPatterns_3_DependencyInversionPrincipleUI.csproj", "{D6DCEC9A-8328-4446-9B52-0612F7B02816}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_5_DependencyInversionPrincipleUI", "DesignPatterns_DependencyInversionPrincipleUI\DesignPatterns_5_DependencyInversionPrincipleUI.csproj", "{D6DCEC9A-8328-4446-9B52-0612F7B02816}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Commander Core 3.1 MVC Rest Api", "Commander Core 3.1 MVC Rest Api\Commander Core 3.1 MVC Rest Api.csproj", "{4B89AE69-7C38-4D51-B404-D41944B97495}"
 EndProject
