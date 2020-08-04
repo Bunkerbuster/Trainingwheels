@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_InterfaceSegregationPrinciple", "DesignPatterns_InterfaceSegregationPrinciple\DesignPatterns_InterfaceSegregationPrinciple.csproj", "{301C76CB-C5C9-480B-8FE9-2247268E2F30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_4_InterfaceSegregationPrinciple", "DesignPatterns_InterfaceSegregationPrinciple\DesignPatterns_4_InterfaceSegregationPrinciple.csproj", "{301C76CB-C5C9-480B-8FE9-2247268E2F30}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_InterfaceSegregationPrincipleUI", "DesignPatterns_InterfaceSegregationPrincipleUI\DesignPatterns_InterfaceSegregationPrincipleUI.csproj", "{814C8A8D-B523-4040-AF03-BBA9BB2A4B42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_4_InterfaceSegregationPrincipleUI", "DesignPatterns_InterfaceSegregationPrincipleUI\DesignPatterns_4_InterfaceSegregationPrincipleUI.csproj", "{814C8A8D-B523-4040-AF03-BBA9BB2A4B42}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp_InterfacesLibrary", "CSharp_InterfacesLibrary\CSharp_InterfacesLibrary.csproj", "{195B9D3B-E7DA-4DE7-B9A4-31E4C578E02E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp_InterfacesUI", "CSharp_InterfacesUI\CSharp_InterfacesUI.csproj", "{D66F247F-6768-41CA-8A39-9C611FE0C674}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_DependencyInversionPrincipleLibrary", "DesignPatterns_DependencyInversionPrincipleLibrary\DesignPatterns_DependencyInversionPrincipleLibrary.csproj", "{BF3B1109-C101-4887-AAC8-8211AA225F62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_3_DependencyInversionPrincipleLibrary", "DesignPatterns_DependencyInversionPrincipleLibrary\DesignPatterns_3_DependencyInversionPrincipleLibrary.csproj", "{BF3B1109-C101-4887-AAC8-8211AA225F62}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_DependencyInversionPrincipleUI", "DesignPatterns_DependencyInversionPrincipleUI\DesignPatterns_DependencyInversionPrincipleUI.csproj", "{D6DCEC9A-8328-4446-9B52-0612F7B02816}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_3_DependencyInversionPrincipleUI", "DesignPatterns_DependencyInversionPrincipleUI\DesignPatterns_3_DependencyInversionPrincipleUI.csproj", "{D6DCEC9A-8328-4446-9B52-0612F7B02816}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commander Core 3.1 MVC Rest Api", "Commander Core 3.1 MVC Rest Api\Commander Core 3.1 MVC Rest Api.csproj", "{4B89AE69-7C38-4D51-B404-D41944B97495}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Commander Core 3.1 MVC Rest Api", "Commander Core 3.1 MVC Rest Api\Commander Core 3.1 MVC Rest Api.csproj", "{4B89AE69-7C38-4D51-B404-D41944B97495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns_1_SingleResponsibilityPrincipleUI", "DesignPatterns_SingleResponsibilityPrincipleUI\DesignPatterns_1_SingleResponsibilityPrincipleUI.csproj", "{63ECB172-BE55-4B0E-9C60-FE3B927CDBD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{4B89AE69-7C38-4D51-B404-D41944B97495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B89AE69-7C38-4D51-B404-D41944B97495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B89AE69-7C38-4D51-B404-D41944B97495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63ECB172-BE55-4B0E-9C60-FE3B927CDBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63ECB172-BE55-4B0E-9C60-FE3B927CDBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63ECB172-BE55-4B0E-9C60-FE3B927CDBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63ECB172-BE55-4B0E-9C60-FE3B927CDBD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

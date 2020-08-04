@@ -5,9 +5,9 @@ namespace DesignPatterns_InterfaceSegregationPrincipleUI
 {
     class Program
     {
+        /// Source : https://www.youtube.com/watch?v=y1JiMGP51NE
         /// <summary>
-        /// https://www.youtube.com/watch?v=y1JiMGP51NE
-        /// 
+        ///
         /// When you are writing code, are you doing it right? That is a question that worries a lot of people, 
         /// and it should probably at least be something every developer thinks through. Design patterns are
         /// best-practice concepts that we can implement into our code to make it better in some way. Think of 
@@ -21,6 +21,29 @@ namespace DesignPatterns_InterfaceSegregationPrincipleUI
 
         static void Main(string[] args)
         {
+
+            // afhankelikj welke interface je aanroept, heb je toegang tot dat contract.
+            // zo heeft IBorrowableDVD toegang tot alles
+            IBorrowableDVD DVD = new DVD();
+
+            DVD.Borrower = "";
+            DVD.Title = "";
+
+            // Maar heeft IBorrowable alleen toegang tot bepaalde onderdelen van het lenen van het object.
+            IBorrowable bDVD = new DVD();
+
+            bDVD.Borrower = "";
+            //bDVD.Title = "";  ==> is niet beschikbaar onder IBorrowable
+
+            // en zo heeft IDVD ook toegang tot andere onderdelen
+            IDVD cDVD = new DVD();
+
+            //DVD.Borrower = "";   ==> is niet beschikbaar onder IDVD
+            cDVD.Title = "";
+
+
+
+
             IBorrowableBook Book = new Book
             {
                 Author = "Demo"

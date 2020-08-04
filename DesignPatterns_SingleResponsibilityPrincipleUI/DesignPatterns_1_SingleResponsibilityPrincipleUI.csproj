@@ -5,8 +5,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DesignPatterns_InterfaceSegregationPrinciple\DesignPatterns_InterfaceSegregationPrinciple.csproj" />
-  </ItemGroup>
-
 </Project>

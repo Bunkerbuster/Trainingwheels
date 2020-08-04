@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DesignPatterns_DependencyInversionPrincipleLibrary\DesignPatterns_DependencyInversionPrincipleLibrary.csproj" />
+    <ProjectReference Include="..\DesignPatterns_DependencyInversionPrincipleLibrary\DesignPatterns_3_DependencyInversionPrincipleLibrary.csproj" />
   </ItemGroup>
 
 </Project>
