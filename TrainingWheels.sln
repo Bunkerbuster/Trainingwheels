@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Commander Core 3.1 MVC Rest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns_1_SingleResponsibilityPrincipleUI", "DesignPatterns_SingleResponsibilityPrincipleUI\DesignPatterns_1_SingleResponsibilityPrincipleUI.csproj", "{63ECB172-BE55-4B0E-9C60-FE3B927CDBD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JS - Snake", "JS - Snake\JS - Snake.csproj", "{B92C5B60-510F-4C23-B3C9-49403DFAA992}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JS - Snake", "JS - Snake\JS - Snake.csproj", "{B92C5B60-510F-4C23-B3C9-49403DFAA992}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JS - Promises - Async -  CallBacks", "JS - Promises - Async -  CallBacks\JS - Promises - Async -  CallBacks.csproj", "{27B0B354-AB71-4242-A65A-572DE555DF9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{B92C5B60-510F-4C23-B3C9-49403DFAA992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B92C5B60-510F-4C23-B3C9-49403DFAA992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B92C5B60-510F-4C23-B3C9-49403DFAA992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B0B354-AB71-4242-A65A-572DE555DF9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B0B354-AB71-4242-A65A-572DE555DF9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B0B354-AB71-4242-A65A-572DE555DF9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B0B354-AB71-4242-A65A-572DE555DF9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
