@@ -10,21 +10,24 @@ var snake;
 (function setup() {
 
     snake = new Snake();
-    snake.draw();
+   // snake.draw();
 
-    Fruit = new Fruit();
-    Fruit.pickLocation();
+    fruit = new Fruit();
+    fruit.pickLocation();
 
     window.setInterval(() => {
-
         ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-         Fruit.Draw();
+        fruit.draw();
 
         snake.update();
         snake.draw();
 
-       
+        if (snake.eat(fruit))
+        {
+            console.log("EATING");
+            fruit.pickLocation();
+        }
 
     }, 250);
 
