@@ -8,10 +8,7 @@ var snake;
 
 
 (function setup() {
-
     snake = new Snake();
-   // snake.draw();
-
     fruit = new Fruit();
     fruit.pickLocation();
 
@@ -25,12 +22,14 @@ var snake;
 
         if (snake.eat(fruit))
         {
-            console.log("EATING");
             fruit.pickLocation();
         }
 
-    }, 250);
+        snake.checkCollision();
 
+        document.querySelector(".score").innerText = snake.total;
+
+    }, 250);
 }());
 
 window.addEventListener("keydown", ((evt) => {

@@ -1,0 +1,26 @@
+﻿
+
+Om de api te testen maken we gebruik van postman
+
+
+
+
+Welke projecten hebben we nodig van nuget (zie je csproj of ze er bij staan)
+
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.SqlServer
+
+
+
+Om te zorgen dat je kunt controleren  of je de juiste dotnet versie van EF hebt.
+
+--> instaleer de SDK van .netcore (64x heb ik getest)
+--> zorg dat je de juiste versie van visual studio hebt 
+		ALs het goed is moet je "Terminal" hebben onder View
+--> zorg dat je de map \tools hebt onder je userprofile C:\Users\Admin\.dotnet\tools
+		-> is deze er niet dan ==>  https://stackoverflow.com/a/58155359/2910930
+			dotnet tool install --global dotnet-ef
+--> en nu zou je met dotnet ef [enter] je versie moeten zien met je eenhoorn erin :)
+
+
