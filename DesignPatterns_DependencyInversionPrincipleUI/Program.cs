@@ -19,7 +19,6 @@ namespace DesignPatterns_DependencyInversionPrincipleUI
         /// 
         /// </summary>
         /// <param name="args"></param>
-
         static void Main(string[] args)
         {
             IPerson Owner = Factory.CreatePerson();
