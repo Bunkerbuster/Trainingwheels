@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Commander_Core_3._1_MVC_Rest_Api.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,6 +33,16 @@ namespace Commander_Core_3._1_MVC_Rest_Api
 
             services.AddControllers();
 
+
+
+
+
+            // Automapper DTO
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+
+
+
             // 3 manieren voor het registreren van de services
             // 1 AddSingleton (same for every request)
             // 2 AddScoped (created once per client request)
@@ -40,10 +51,16 @@ namespace Commander_Core_3._1_MVC_Rest_Api
             // Dus iedere keer als de app vraagt om ICommanderRepo, 
             // geeft deze de MockCommanderRepo. En wil je de vervangen hoeft 
             // dat dus maar op 1 plek te gebeuren
-            services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+
+            //// MOCKUP (testing purpose)
+            //// services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+            
+            services.AddScoped<ICommanderRepo, SqlCommanderRepo>();
 
 
-           
+
+
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
