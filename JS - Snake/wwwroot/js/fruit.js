@@ -7,7 +7,6 @@
         this.y = (Math.floor(Math.random() * columns - 1) + 1) * scale;
     }
 
-
     this.draw = function () {
         ctx.fillStyle = "#4CAFAB";
         ctx.fillRect(this.x, this.y, scale, scale)

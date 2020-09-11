@@ -19,7 +19,15 @@ namespace Commander_Core_3._1_MVC_Rest_Api.Controllers
     [ApiController]
     public class CommanderController : ControllerBase
     {
-        private readonly MockCommanderRepo Repository = new MockCommanderRepo();
+        private readonly ICommanderRepo Repository;
+
+        public CommanderController(ICommanderRepo repository)
+        {
+            Repository = repository;
+        }
+
+        // Bovenstaande vervangt onderstaande regel  
+        // ==> VERVANGEN private readonly MockCommanderRepo Repository = new MockCommanderRepo();
 
         /// <summary>
         /// GET api/commands

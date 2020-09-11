@@ -74,17 +74,22 @@
 
     this.eat = function (fruit)
     {
-        //console.log(fruit);
-
         if (this.x === fruit.x && this.y === fruit.y)
         {
             this.total++;
             
             return true;
         }
-
         return false;
+    }
 
+    this.checkCollision = function () {
+        for (var i = 0; i < this.tail.length; i++) {
+            if (this.x === this.tail[i].x && this.y === this.tail[i].y) {
+                this.total = 0;
+                this.tail = [];
+            }
+        }
     }
 
 }
