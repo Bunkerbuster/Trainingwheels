@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Commander_Core_3._1_MVC_Rest_Api.Models;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.Design;
 
 namespace Commander_Core_3._1_MVC_Rest_Api.Data
@@ -11,7 +12,7 @@ namespace Commander_Core_3._1_MVC_Rest_Api.Data
 
         }
 
-        public DbSet<CommandID> Commands { get; set; }
+        public DbSet<Command> Commands { get; set; }
 
     }
 }

@@ -1,0 +1,35 @@
+﻿Waar zijn we gebleven
+
+	https://youtu.be/fmvcAzHpsk8?t=7480
+
+
+
+----------------------------------------------------------------------------
+Standaard black box api (internal (Domain Models))
+
+Whats wrong with that?
+
+--> we're exposing internal domain implementation detail
+	--> potentially irrelevant, wrong format, insecure etc....
+	--> we are giving our internal modals (en so the DB design) back 
+	--> You want to give back the age in stead of the day of birth
+
+--> We're coupling out internals to our extrenal contact, so:
+	--> Changes to our internals will be difficult in order to maintain out contract, or...
+	--> We'll break out contract altogether
+
+THE ANSWER
+We need to decouple our internal domain from what we send & receive
+--> external (DTO)
+
+----------------------------------------------------------------------------
+Data Transfer Objects
+
+nuget : AutoMapper.Extensions.Microsoft.DependencyInjection
+
+--> we are going to map the enternal domain to the external DTO
+--> Using automapper
+
+--> creating a read DTO
+--> creating a creat DTO
+

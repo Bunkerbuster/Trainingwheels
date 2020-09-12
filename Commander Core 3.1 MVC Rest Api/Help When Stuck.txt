@@ -1,10 +1,9 @@
 ﻿
-
+----------------------------------------------------------------------------
 Om de api te testen maken we gebruik van postman
 
 
-
-
+----------------------------------------------------------------------------
 Welke projecten hebben we nodig van nuget (zie je csproj of ze er bij staan)
 
 Microsoft.EntityFrameworkCore
@@ -12,7 +11,7 @@ Microsoft.EntityFrameworkCore.Design
 Microsoft.EntityFrameworkCore.SqlServer
 
 
-
+----------------------------------------------------------------------------
 Om te zorgen dat je kunt controleren  of je de juiste dotnet versie van EF hebt.
 
 --> instaleer de SDK van .netcore (64x heb ik getest)
@@ -22,5 +21,51 @@ Om te zorgen dat je kunt controleren  of je de juiste dotnet versie van EF hebt.
 		-> is deze er niet dan ==>  https://stackoverflow.com/a/58155359/2910930
 			dotnet tool install --global dotnet-ef
 --> en nu zou je met dotnet ef [enter] je versie moeten zien met je eenhoorn erin :)
+
+
+----------------------------------------------------------------------------
+Update Database
+
+--> open  terminal
+--> ga naar de juiste folder  (cd root van je project)
+	--> bv cd "Commander Core 3.1 MVC Rest Api"
+
+--> DB aanmaken / wijzigen
+	-->  dotnet ef migrations add initialmigration
+
+--> remove wijzigingen
+	--> dotnet ef migrations remove
+
+--> update database
+	--> dotnet ef migrations database update
+
+
+----------------------------------------------------------------------------
+Builden van project
+
+--> open  terminal
+--> ga naar de juiste folder  (cd root van je project)
+	--> bv cd "Commander Core 3.1 MVC Rest Api"
+
+--> builden van project (zonder de ef erin!!!!)
+	--> dotnet build
+
+
+----------------------------------------------------------------------------
+Run van project
+
+--> open  terminal
+--> ga naar de juiste folder  (cd root van je project)
+	--> bv cd "Commander Core 3.1 MVC Rest Api"
+
+--> run van project (zonder de ef erin!!!!)
+	--> dotnet run
+
+
+----------------------------------------------------------------------------
+Stoppen / shut down van running project
+
+--> shutdown van project (zonder de ef erin!!!!)
+	--> [ctrl]+[c]
 
 

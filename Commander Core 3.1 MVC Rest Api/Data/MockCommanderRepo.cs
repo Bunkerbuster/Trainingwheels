@@ -8,7 +8,8 @@ namespace Commander_Core_3._1_MVC_Rest_Api.Data
 {
     public class MockCommanderRepo : ICommanderRepo
     {
-        public IEnumerable<Command> GetAppCommands()
+
+        public IEnumerable<Command> GetAllCommands()
         {
 
             var Commands = new List<Command>

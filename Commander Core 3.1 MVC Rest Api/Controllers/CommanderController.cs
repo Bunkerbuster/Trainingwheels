@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Commander_Core_3._1_MVC_Rest_Api.Data;
+using Commander_Core_3._1_MVC_Rest_Api.Dtos;
 using Commander_Core_3._1_MVC_Rest_Api.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,10 +22,12 @@ namespace Commander_Core_3._1_MVC_Rest_Api.Controllers
     public class CommanderController : ControllerBase
     {
         private readonly ICommanderRepo Repository;
+        private readonly IMapper Mapper;
 
-        public CommanderController(ICommanderRepo repository)
+        public CommanderController(ICommanderRepo repository, IMapper mapper)
         {
             Repository = repository;
+            Mapper = mapper;
         }
 
         // Bovenstaande vervangt onderstaande regel  
@@ -31,28 +35,36 @@ namespace Commander_Core_3._1_MVC_Rest_Api.Controllers
 
         /// <summary>
         /// GET api/commands
+        /// 
+        /// use CommandReadDTO instead of the Command to return your data,
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public ActionResult<IEnumerable<Command>> GetAllCommands()
+        public ActionResult<IEnumerable<CommandReadDto>> GetAllCommands()
         {
-            var CommandItems = Repository.GetAppCommands();
+            var CommandItems = Repository.GetAllCommands();
 
-            return Ok(CommandItems);
+            return Ok(Mapper.Map<IEnumerable<CommandReadDto>>(CommandItems));
         }
 
         /// <summary>
         /// GET api/commands/{id}
         /// GET api/commands/5
+        /// https://localhost:5001/api/Commands/1
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public ActionResult <Command> GetCommandById(int id)
+        public ActionResult<CommandReadDto> GetCommandById(int id)
         {
+
             var CommandItem = Repository.GetCommandById(id);
 
-            return Ok(CommandItem);
+            if(CommandItem!= null)
+            {
+                return Ok(Mapper.Map<CommandReadDto>(CommandItem));
+            }
+            return NotFound();
         }
     }
 }
