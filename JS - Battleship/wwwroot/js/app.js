@@ -16,20 +16,24 @@
     const InfoDisplay = document.querySelector('#info');
 
     const userSquares = []
+    const ComputerSquares = []
     const width = 10;
 
     // Create Board
-    function CreateBoard(Grid, squares, width) {
+    function CreateBoard(grid, squares) {
         for (let i = 0; i < width * width; i++) {
             const square = document.createElement('div')
 
-            squares.dataset.id = i
+            square.dataset.id = i
 
-            Grid.appendChild(square);
+            grid.appendChild(square);
             squares.push(square);
         }
 
     }
-    CreateBoard(UserGrid, userSquares, width);
+    CreateBoard(UserGrid, userSquares);
+    CreateBoard(ComputerGrid, ComputerSquares);
     //CreateBoard(ComputerGrid, UserSquares, width);
+    ////////////////////////////////////////////////
+    ////////////////////////////////////////////////
 })
