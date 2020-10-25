@@ -3,7 +3,7 @@ using Xunit;
 
 namespace CSharp_ClassesAndObjects.Tests
 {
-
+    // DIT IS UNIT TESTEN MET XUNIT
     // open terminal
     // juiste folder
     // dotnet test => en resultaat

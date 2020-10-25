@@ -6,11 +6,19 @@ namespace CSharp_ClassesAndObjects
 {
     public class Book
     {
+
+        // met public geef je de axis modifiers aan
+        // = code outside of the class can axes this code.
+
+        // string = in ditr geval een constructor (parameter)
         
         public Book(string name)
         {
             grades = new List<double>();
-            this.name = name;
+
+            // this.name verwijst naar de constructor van de method
+            // met name wordt verwezen naar de inkomende constructor
+            this.Name = name;
         }
 
         public void AddGrade(double grade)
@@ -42,6 +50,7 @@ namespace CSharp_ClassesAndObjects
         public Statistics GetStatistics()
         {
             var result = new Statistics();
+            
             result.Average = 0.0;
             result.High = double.MinValue;
             result.Low = double.MaxValue;
@@ -60,7 +69,7 @@ namespace CSharp_ClassesAndObjects
         }
 
         private List<double> grades;
-        public string name;
+        public string Name;
 
     }
 }

@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Commander_Core_3._1_MVC_Rest_Api</RootNamespace>
+    <UserSecretsId>7322c4c0-8d47-4e1a-ac21-a9fe5444e592</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
