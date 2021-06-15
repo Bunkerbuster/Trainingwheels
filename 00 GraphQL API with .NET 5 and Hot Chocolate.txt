@@ -1,0 +1,11 @@
+
+.net Core 5.0
+SQL Server
+
+
+Docker
+https://youtu.be/HuN94qNwQmM?t=2114
+
+
+Docker For SQL
+https://youtu.be/HuN94qNwQmM?t=2896
