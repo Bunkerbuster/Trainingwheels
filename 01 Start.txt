@@ -1,0 +1,8 @@
+Design Pattern  overview
+
+Elements of reusable Object-Oriented Software
+
+
+1 Strategy pattern:
+
+
